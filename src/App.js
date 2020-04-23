@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Bar, Line, Pie } from 'react-chartjs-2';
+import { Switch, Route } from 'react-router-dom';
 
-import Header from './components/Header';
+import Header from './components/Nav/Header';
+import Footer from './components/Footer/Footer';
+import ErrorComponent from './components/Error';
+import Home from './components/Routes/Home/Home';
+import Dashboard from './components/Routes/Dashboard/Dashboard';
 
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
 
 const App = _ => {
 
@@ -75,15 +79,16 @@ const App = _ => {
         <Header />
 
         <Switch>
-          <Route path="/" component={ Home } />
-          <Route path="/heath_dashboard" component={ Dashboard } />
-          <Route path="/live_score" component={ Score } />
-          <Route path="/statistics" component={ Statistics } />
-          <Route path="/analytics" component={ Analytics } />
-          <Route path="/forecasts" component={ Forecast } />
+          <Route exact path="/" component={ Home } />
+          <Route path="/health_dashboard" component={ Dashboard } />
+          <Route path="/live_score" component={ ErrorComponent } />
+          <Route path="/statistics" component={ ErrorComponent } />
+          <Route path="/analytics" component={ ErrorComponent } />
+          <Route path="/forecasts" component={ ErrorComponent } />
         </Switch>
 
-      
+        <Footer />
+
     </div>
   );
 }
