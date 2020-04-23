@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
 import { Bar, Line, Pie } from 'react-chartjs-2';
+
+import Header from './components/Header';
 
 import './App.css';
 
@@ -68,10 +69,10 @@ const App = _ => {
   })
 
   return (
-    <div className="App" style={{width: '600px', height: '600px'}}>
+    <div className="App">
 
-
-        <Line
+        <Header />
+        {/* <Line
           data={lineData}
           options={{
 
@@ -86,7 +87,7 @@ const App = _ => {
               position: 'left'
             }
         }}   
-        />
+        /> */}
       
     </div>
   );
