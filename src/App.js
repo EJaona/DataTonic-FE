@@ -4,6 +4,7 @@ import { Bar, Line, Pie } from 'react-chartjs-2';
 import Header from './components/Header';
 
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
 const App = _ => {
 
@@ -72,22 +73,16 @@ const App = _ => {
     <div className="App">
 
         <Header />
-        {/* <Line
-          data={lineData}
-          options={{
 
-            responsive: true,
-            legend: {
-              position: 'bottom',
-              
-            },
-            title:{
-              display: true,
-              text: 'Success Rate',
-              position: 'left'
-            }
-        }}   
-        /> */}
+        <Switch>
+          <Route path="/" component={ Home } />
+          <Route path="/heath_dashboard" component={ Dashboard } />
+          <Route path="/live_score" component={ Score } />
+          <Route path="/statistics" component={ Statistics } />
+          <Route path="/analytics" component={ Analytics } />
+          <Route path="/forecasts" component={ Forecast } />
+        </Switch>
+
       
     </div>
   );
