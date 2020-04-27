@@ -1,0 +1,23 @@
+.dashboard {
+    width: 85%;
+    margin: auto;
+}
+
+.fa-info-circle {
+    font-size: .8rem;
+}
+
+
+.overall-health {
+    /* border: 1px solid red; */
+}
+
+.overall-health .data .img {
+    border: 1px solid black;
+    width: 24%;
+    padding: 1%;
+    margin: 2%;
+}
+
+
+

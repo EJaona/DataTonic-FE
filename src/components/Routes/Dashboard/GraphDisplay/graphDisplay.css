@@ -1,0 +1,17 @@
+.graph{
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 44%;
+    /* border: 1px solid blue; */
+    background: white;
+    box-shadow: 0 0 5px;
+    padding: 3% 2% 3% 2%;
+}
+
+.data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid red */
+}

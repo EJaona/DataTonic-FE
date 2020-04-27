@@ -1,0 +1,60 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.filter {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-container {
+    width: 23%;
+    position: relative;
+    
+}
+
+.fa-angle-down {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+}
+
+.select-container .filter-input {
+    width: 100%;
+    padding: 3%;
+}
+
+form .select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.date-time {
+    padding-right: 1%;
+}
+
+
+.date-time::after {
+    content: '\f073';
+    font-family: 'FontAwesome';
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 25%;
+}

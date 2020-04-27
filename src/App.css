@@ -1,0 +1,18 @@
+.App {
+  /* text-align: center; */
+  /* width: 75.5%; */
+  margin: auto;
+  /* border: 1px solid red; */
+  background: #F5F7FA;
+}
+
+.container {
+  width: 75.5%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+.selectdiv:after {
+
+  content: &#9757;
+}

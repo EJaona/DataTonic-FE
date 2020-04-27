@@ -1,0 +1,36 @@
+.header{
+    background: #105AA6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    padding: .7% 8% .7% 5% ;
+}
+
+nav {
+    /* border: 1px solid yellow; */
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    color: #CDE1EF;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:focus {
+    color: white;
+}
+
+.logo-link {
+    border-right: 1px solid white;
+    padding-right: 2%;
+    /* margin-left: 4%; */
+}
