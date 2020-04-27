@@ -8,7 +8,8 @@ import LostTransactions from './GraphDisplay/LostTransactions';
 import './main.css'
 
 export default props => {
-
+    
+    console.log(props.lostRefund)
     return (
 
         <div className="dashboard"  >
@@ -34,12 +35,12 @@ export default props => {
                 line_data={props.line_data}
             />
             <LostTransactions
-                bar_data={props.bar_data}
-                line_data={props.line_data}
+                lostRefund={props.lostRefund}
             />
             <OverallHealth 
                 bar_data={props.bar_data}
                 line_data={props.line_data}
+                
             /> 
 
         </div>
