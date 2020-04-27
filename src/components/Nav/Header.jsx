@@ -6,11 +6,6 @@ import './nav.css'
 
 export default props => {
 
-    // const [headerStyles, setStyles] = useState({
-    //     border: '1px solid blue',
-    //     display: 'flex',
-    //     justifyContent: 'space-between'
-    // })// Temp styles until styling is actually implemented
     
     return(
 
@@ -37,8 +32,7 @@ export default props => {
             </nav>
 
             <p className="user-name">
-                John Doe
-                {/* user name goes here, will be dynamic */}
+                { props.name || 'John Doe' }
             </p>
 
         </div>

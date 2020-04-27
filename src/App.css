@@ -9,6 +9,10 @@
 .container {
   width: 75.5%;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
+.selectdiv:after {
+
+  content: &#9757;
+}

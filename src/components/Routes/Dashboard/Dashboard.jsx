@@ -1,27 +1,35 @@
 import React from 'react';
 
-import Filter from './Filter';
-import Refunds from './Refund';
-import Transactions from './Transactions';
-import OverallHealth from './OverallHealth';
-import LostTransactions from './LostTransactions';
+import Filter from './Filter/Filter';
+import GraphDisplay from './GraphDisplay/GraphDisplay';
+import OverallHealth from './GraphDisplay/OverallHealth';
+import LostTransactions from './GraphDisplay/LostTransactions';
 
-import './dashboard.css'
+import './main.css'
 
 export default props => {
 
-    return(
-        <div className="dashboard" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}} >
+    return (
 
+        <div className="dashboard"  >
+            
             <Filter
-                lastCall={props.lastCall}
-                nextCall={props.nextCall} 
+                dataLabels={ props.dataLabels }
+                lastCall={ props.lastCall }
+                nextCall={ props.nextCall } 
+                getData={ props.getData }
             />
-            <Transactions 
+            <GraphDisplay
+                title="Transactions"
+                barGraphText="Number of Transactions"
+                lineGraphText="Success Rate"
                 bar_data={props.bar_data}
                 line_data={props.line_data}
             />
-            <Refunds 
+            <GraphDisplay
+                title="Refunds"
+                lineGraphText="Success Rate"
+                barGraphText="Number of Transactions"
                 bar_data={props.bar_data}
                 line_data={props.line_data}
             />
